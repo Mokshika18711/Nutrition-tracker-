@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pantry - Nutrition Tracker</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <main class="container">
+        <h1>My Pantry</h1>
+        <form id="addIngredientForm">
+            <label for="ingredient">Ingredient:</label>
+            <input type="text" id="ingredient" name="ingredient" required>
+            <label for="quantity">Quantity:</label>
+            <input type="number" id="quantity" name="quantity" min="1" required>
+            <button type="submit">Add Ingredient</button>
+        </form>
+        <h2>Current Pantry</h2>
+        <ul id="pantryList"></ul>
+        <button id="viewRecipesBtn">View Recipes</button>
+        <button id="logoutBtn">Logout</button>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
